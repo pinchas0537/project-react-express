@@ -2,7 +2,7 @@ import fs from "fs/promises"
 
 const path = "C:/Users/Public.user/Documents/front/project_react_express/server/src/db/data.json"
 
-export async function readfile(path) {
+export async function readfile() {
     try {
         const data = await fs.readFile(path, 'utf8')
         return JSON.parse(data)
