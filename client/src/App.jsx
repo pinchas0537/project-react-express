@@ -4,6 +4,7 @@ import UserContext from "./contexts/UserContext.js"
 import SubmitComplaintPage from './pages/SubmitComplaintPage'
 import { Route, Routes } from 'react-router'
 import AdminLoginPage from './pages/AdminLoginPage'
+import AdminComplaintsPage from './pages/AdminComplaintsPage.jsx'
 
 export default function App() {
   const [currentUser, setCurrentUser] = useState(null);
@@ -13,6 +14,7 @@ export default function App() {
         <Route path='/' element={<HomePage />} />
         <Route path='submit' element={<SubmitComplaintPage />} />
         <Route path='admin/login' element={<AdminLoginPage />} />
+        <Route path='admin' element={<AdminComplaintsPage/>}/>
       </Routes>
     </UserContext.Provider>
   )

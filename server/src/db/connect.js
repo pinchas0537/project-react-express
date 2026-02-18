@@ -1,6 +1,6 @@
 import fs from "fs/promises"
 
-const path = "C:/Users/Public.user/Documents/front/project_react_express/server/src/db/data.json"
+const path = "./db/data.json"
 
 export async function readfile() {
     try {

@@ -25,6 +25,6 @@ export function adminLogin(req, res) {
 
 export async function getAllDb(req,res){
     const file =  await readfile()
-    const newFile = file.sort((a,b)=>b.createedAt - a.createedAt)
-    res.send(newFile)
+    // const newFile = file.sort((a,b)=>b.createedAt - a.createedAt)
+    res.send(file)
 }

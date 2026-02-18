@@ -12,7 +12,18 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+table, td {
+  border-top:2px solid black;
+}
+table{
+  border-bottom:2px solid black;
+}
+th, td {
+  border-left:2px solid black;
+}
+table{
+  border-right: 2px solid black;
+}
 a {
   font-weight: 500;
   color: #646cff;
